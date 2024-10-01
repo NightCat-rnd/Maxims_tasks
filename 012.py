@@ -2,7 +2,7 @@
 # первого и последнего вхождения.
 # Если символа нет, то ничего не выводить
 
-str_in = input('Enter string ')
+str_in = input('Enter string: ')
 pos = str_in.find('f')
 prnt = ''
 if pos != -1 :
