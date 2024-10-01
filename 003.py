@@ -1,6 +1,7 @@
 # дано целое четырехзначное число. Определите, является ли его десятичная запись симметричной
 # если число меньше 4 знаков, то слева оно дополняется незначащими нулями
 str_number = input('Введите число (максимум четырехзначное) ')
+'''
 number_of_digit = len(str_number)
 if number_of_digit == 1 :
     str_number = '000'+str_number
@@ -14,4 +15,9 @@ if str_number == reverse_number :
     print('Число симметричное')
 else:
     print('Число не симметричное')
+'''
 
+str_number = str_number.zfill(4)
+print(str_number)
+reverse_number = str_number[::-1]
+print(int( str_number == reverse_number))
